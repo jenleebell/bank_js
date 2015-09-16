@@ -10,3 +10,17 @@ Account.prototype.deposit = function(amount) {
 Account.prototype.withdraw = function(amount) {
 	return this.balance -= amount;
 };
+
+$(document).ready(function() {
+	$("form#create-account").submit(function(event){
+		var name = $("input#name").val();
+		var balance = $("input#balance").val();
+		var newAccount = new Account(name, balance);
+			var newName = newAccount.name;
+			var newBalance = newAccount.balance;
+
+		$(".account-holder").text(newName + " " + "$" + newBalance);
+		$("#account-balance").show();
+		event.preventDefault();
+	});
+});
