@@ -4,9 +4,9 @@ describe("Account", function() {
     expect(testAccount.name).to.equal("Mika");
     expect(testAccount.balance).to.equal(100);
   });
-    it("adds a withdraw method", function() {
+    it("adds a deposit method", function() {
     var testAccount = new Account("Mika", 100);
-    testAccount.withdraw(50);
-    expect(testAccount.balance).to.equal(150);
+    testAccount.deposit(100);
+    expect(testAccount.balance).to.equal(200);
   });
 });
