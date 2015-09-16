@@ -19,7 +19,7 @@ $(document).ready(function() {
 			var newName = newAccount.name;
 			var newBalance = newAccount.balance;
 
-		$(".account-holder").text(newName + " " + "$" + newBalance);
+		$(".account-holder").text("Welcome " + newName + " :: Your Balance is " + "$" + newBalance);
 		$("#account-balance").show();
 		event.preventDefault();
 	});
