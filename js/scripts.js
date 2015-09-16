@@ -1,4 +1,4 @@
-function Account (name, initialDeposit) {
+function Account (name, balance) {
   this.name = name;
-  this.initialDeposit = initialDeposit;
+  this.balance = balance;
 }
